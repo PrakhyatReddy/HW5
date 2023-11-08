@@ -5,10 +5,11 @@ function showAlert() {
 
 // Function 2: Reverse Text
 function reverseText() {
-    const textToReverse = document.getElementById("textToChange").value;
-    const reversedText = textToReverse.split('').reverse().join('');
-    document.getElementById("textToChange").textContent = reversedText;
+    const textToChange = document.getElementById("textToChange").value;
+    const reversedText = textToChange.split('').reverse().join('');
+    document.getElementById("textToChange").value = reversedText;
 }
+
 
 // Function 3: Calculate the sum of two numbers
 function calculateSum() {
