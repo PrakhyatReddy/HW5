@@ -5,8 +5,8 @@ function showAlert() {
 
 // Function 2: Reverse Text
 function reverseText() {
-    const textToChange = document.getElementById("textToChange").value;
-    const reversedText = textToChange.split('').reverse().join('');
+    const textToReverse = document.getElementById("textToChange").value;
+    const reversedText = textToReverse.split('').reverse().join('');
     document.getElementById("textToChange").textContent = reversedText;
 }
 
