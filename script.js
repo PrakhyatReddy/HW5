@@ -36,10 +36,9 @@ function clearInputs() {
     document.getElementById("textToChange").value = "";
 }
 
-// Function 7: Display an alert with a custom message
-function showCustomAlert() {
-    const message = prompt("Enter a custom message:");
-    if (message) {
-        alert(message);
-    }
+// Function 7: Get the current date and time
+function getCurrentDateTime() {
+    const now = new Date();
+    document.getElementById("dateTimeResult").textContent = `Current date and time: ${now.toLocaleString()}`;
 }
+
