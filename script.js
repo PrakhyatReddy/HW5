@@ -1,12 +1,12 @@
 // Function 1: Display an alert
 function showAlert() {
-    alert("Welcome to my HW 5 interactive website :)");
+    alert("Hello, world!");
 }
 
 // Function 2: Change the text of an HTML element
 function changeText() {
-  const textToChange = document.getElementById("textToChange").value;
-  document.getElementById("textToChange").value = textToChange;
+    const textToChange = document.getElementById("textToChange").value;
+    document.getElementById("textToChange").textContent = textToChange;
 }
 
 // Function 3: Calculate the sum of two numbers
