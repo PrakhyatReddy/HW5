@@ -43,8 +43,3 @@ function showCustomAlert() {
         alert(message);
     }
 }
-
-
-   <script src="script.js"></script>
-</body>
-</html>
