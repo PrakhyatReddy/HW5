@@ -3,10 +3,11 @@ function showAlert() {
     alert("Hello, world!");
 }
 
-// Function 2: Change the text of an HTML element
-function changeText() {
+// Function 2: Reverse Text
+function reverseText() {
     const textToChange = document.getElementById("textToChange").value;
-    document.getElementById("textToChange").textContent = textToChange;
+    const reversedText = textToChange.split('').reverse().join('');
+    document.getElementById("textToChange").textContent = reversedText;
 }
 
 // Function 3: Calculate the sum of two numbers
