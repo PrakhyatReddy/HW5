@@ -1,6 +1,6 @@
 // Function 1: Display an alert
 function showAlert() {
-    alert("Hello, world!");
+    alert("Welcome to my HW 5 interactive website :)");
 }
 
 // Function 2: Change the text of an HTML element
