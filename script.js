@@ -6,7 +6,7 @@ function showAlert() {
 // Function 2: Change the text of an HTML element
 function changeText() {
     const textToChange = document.getElementById("textToChange").value;
-    document.getElementById("demo").innerHTML = textToChange;
+    document.getElementById("textToChange").innerHTML = textToChange;
 }
 
 // Function 3: Calculate the sum of two numbers
