@@ -1,45 +1,50 @@
-// Function 1: Display an alert
-function showAlert() {
-    alert("Hello, world!");
-}
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Interactive JavaScript Website</title>
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+   <style>
+       .container {
+           text-align: center;
+           margin-top: 20px;
+       }
 
-// Function 2: Change the text of an HTML element
-function changeText() {
-    const textToChange = document.getElementById("textToChange").value;
-    document.getElementById("demo").innerHTML = textToChange;
-}
+       .result {
+           font-weight: bold;
+           margin-top: 10px;
+       }
+   </style>
+</head>
+<body>
+   <div class="container">
+       <h1>Interactive JavaScript Website</h1>
+       <div class="row">
+           <div class="col-md-6">
+               <h3>Alerts and Messages</h3>
+               <button class="btn btn-primary" onclick="showAlert()">Show Alert</button>
+               <button class="btn btn-info" onclick="showCustomAlert()">Custom Alert</button>
+               <hr>
+               <h3>Text Manipulation</h3>
+               <input type="text" id="textToChange" class="form-control" placeholder="Enter text">
+               <button class="btn btn-success" onclick="changeText()">Change Text</button>
+               <hr>
+               <h3>Calculator</h3>
+               <input type="number" id="num1" class="form-control" placeholder="Enter a number">
+               <input type="number" id="num2" class="form-control" placeholder="Enter another number">
+               <button class="btn btn-info" onclick="calculateSum()">Calculate Sum</button>
+               <p class="result" id="sumResult"></p>
+               <hr>
+               <h3>Toggle Element</h3>
+               <p id="toggleMe">This element can be toggled.</p>
+               <button class="btn btn-warning" onclick="toggleVisibility()">Toggle Element</button>
+               <hr>
+               <h3>Current Date and Time</h3>
+               <button class="btn btn-danger" onclick="getCurrentDateTime()">Get Date & Time</button>
+               <p class="result" id="dateTimeResult"></p>
+           </div>
+       </div>
+   </div>
 
-// Function 3: Calculate the sum of two numbers
-function calculateSum() {
-    const num1 = parseFloat(document.getElementById("num1").value) || 0;
-    const num2 = parseFloat(document.getElementById("num2").value) || 0;
-    const sum = num1 + num2;
-    document.getElementById("sumResult").textContent = `Sum: ${sum}`;
-}
-
-// Function 4: Toggle an element's visibility
-function toggleVisibility() {
-    const element = document.getElementById("toggleMe");
-    element.style.display = (element.style.display === "none") ? "block" : "none";
-}
-
-// Function 5: Get the current date and time
-function getCurrentDateTime() {
-    const now = new Date();
-    document.getElementById("dateTimeResult").textContent = now.toLocaleString();
-}
-
-// Function 6: Clear input fields
-function clearInputs() {
-    document.getElementById("num1").value = "";
-    document.getElementById("num2").value = "";
-    document.getElementById("textToChange").value = "";
-}
-
-// Function 7: Display an alert with a custom message
-function showCustomAlert() {
-    const message = prompt("Enter a custom message:");
-    if (message) {
-        alert(message);
-    }
-}
+   <script src="script.js"></script>
+</body>
+</html>
