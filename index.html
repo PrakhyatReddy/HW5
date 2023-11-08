@@ -29,11 +29,16 @@
                <button class="btn btn-success" onclick="reverseText()">Reverse Text</button>
                <hr>
                <h3>Calculator</h3>
+               <div class="row">
+               <div class="col-md-6">
                <input type="number" id="num1" class="form-control" placeholder="Enter a number">
-               <input type="number" id="num2" class "form-control" placeholder="Enter another number">
+               </div>
+               <div class="col-md-6">
+               <input type="number" id="num2" class="form-control" placeholder="Enter another number">
+               </div>
+               </div>
                <button class="btn btn-info" onclick="calculateSum()">Calculate Sum</button>
                <p class="result" id="sumResult"></p>
-               <hr>
                <h3>Toggle Element</h3>
                <p id="toggleMe">This element can be toggled.</p>
                <button class="btn btn-warning" onclick="toggleVisibility()">Toggle Element</button>
